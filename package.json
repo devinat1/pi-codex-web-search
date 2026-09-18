@@ -1,0 +1,41 @@
+{
+  "name": "@devinat1/pi-codex-web-search",
+  "version": "0.1.0",
+  "description": "A Pi extension that searches the web through the authenticated Codex CLI.",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "codex",
+    "web-search"
+  ],
+  "license": "MIT",
+  "author": "Devin Ersoy",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devinat1/pi-codex-web-search.git"
+  },
+  "bugs": {
+    "url": "https://github.com/devinat1/pi-codex-web-search/issues"
+  },
+  "homepage": "https://github.com/devinat1/pi-codex-web-search#readme",
+  "files": [
+    "extensions",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test tests/*.test.mjs"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/codex-web-search.ts"
+    ]
+  }
+}
